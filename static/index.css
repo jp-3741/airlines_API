@@ -1,0 +1,357 @@
+
+
+.container-1{
+    width: 100%;
+    width: 400px;
+    margin: auto;
+    background-color: #172115;
+}
+
+.con-1{
+    font-size: large;
+    font-weight: 600;
+    color:#9ca19d;
+}
+
+.con-2{
+    
+    margin: auto;
+    background-color: #181818;
+    color: #9ca19d; 
+    border-radius: 2px;
+    margin-right: 156px;
+    
+}
+
+.p1{
+    font-size: 12px;
+    margin-bottom: 3px;
+    color: #484849;
+
+}  
+
+
+.p2{
+    font-size: 12px;
+    margin-bottom: 3px;
+    color: #484849;
+
+}  
+
+.con-3  {
+    
+    margin: auto;
+    background-color: #181818;
+    color: #898c89; 
+    border-radius: 2px;
+    margin-right: 156px;
+    
+}
+.con-3{
+    background-color: #293021;
+}
+
+.con-3 .p2 {
+    background-color: #293021;
+    margin: 0; /* Remove default margin */
+}
+
+.form-group1 {
+    background-color: #181818;
+
+}
+#origin {
+    background-color: #181818;
+    color: #9ca19d; /* Ensure the text is readable on a red background */
+    border: none; 
+    outline: none;  
+    padding-left: 16px;
+
+}
+
+#origin.hover{
+    border: none; 
+    outline: black;
+}
+
+
+#origin option {
+    background-color: #9ca19d; /* Change the background color of the options */
+    color: black; /* Ensure the text is readable on a white background */
+    padding: 20px 20px 30px 20px;
+
+}
+
+#origin:focus {
+    background-color: #181818;
+    color: #9ca19d;
+}
+
+
+
+
+#origin option {
+    background-color: #181818;
+    color: #9ca19d;
+   
+}
+
+/* Ensure the options background color on focus and hover */
+#origin option:checked,
+#origin option:hover {
+    background-color: #181818;
+    color: #9ca19d;
+}
+
+/* Custom arrow for the dropdown */
+.form-control {
+    position: relative;
+}
+
+.form-control::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #9ca19d;
+    pointer-events: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+
+
+
+
+#origin1 {
+    background-color: #283121;
+    color: #9ca19d; /* Ensure the text is readable on a red background */
+    border: none; 
+    outline: none;  
+    padding-left: 16px;
+}
+
+#origin1:hover {
+    border: none; 
+    outline: black;
+}
+
+#origin1 option {
+    background-color: #181818; /* Change the background color of the options */
+    color: #9ca19d; /* Ensure the text is readable on a white background */
+    padding: 20px 20px 30px 20px;
+}
+
+#origin1:focus {
+    background-color: #181818;
+    color: #9ca19d;
+}
+
+/* .form-control {
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+} */
+
+/* Ensure the options background color on focus and hover */
+
+/* Custom arrow for the dropdown */
+.form-control {
+    position: relative;
+    background-color: #283121;
+}
+
+.form-control::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #9ca19d;
+    pointer-events: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+
+.dropdown-arrow {
+    /* Your custom styles here */
+    border: none; /* Remove default border */
+    background-color: transparent; /* Make it transparent */
+    transform: rotate(90deg); /* Rotate it to the right */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.dropdown-arrow:hover {
+    /* Styles for hover state */
+    transform: rotate(180deg); /* Rotate further on hover */
+}
+
+.btn{
+    border-radius: 2px;
+    width:100px;
+    
+    color:white;
+}
+
+.miles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .airline-card {
+        width: 90%;
+    }
+}
+
+
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+
+.miles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+
+.flight-data {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #172115;
+}
+#airline-name-1 {
+    font-size: 26px; /* Adjust this value to the desired font size */
+}       
+
+/* General rule for all h2 elements within the airline cards */
+.airline-card h2 {
+    font-size: 26px; /* Adjust this value to the desired font size */
+    font-weight: 400;
+}
+
+.airline-card {
+    width: 15%;
+    padding: 20px;
+    border: 1px solid #1a4c2e;
+    border-radius: 7px;
+    background-color: #1a4c2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+
+.miles-title {
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+.miles-container .miles-value {
+    font-size: 28px; /* Adjust the font size of the values as needed */
+    font-weight: bold;
+}
+
+#cards-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color:  #1a4c2e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.miles-value{
+    font-size: 20px;
+}
+
+
+#destination-date-1, #destination-date-2 {
+ font-size: 15px;
+}
+
+#destination-1, #date-1, #destination-2, #date-2 {
+    margin: 2px 0; /* Adjust this value as needed to reduce the gap */
+}
+
+
+
+.form-group1 select {
+    background-color: #181818; /* Background color */
+    color: #9ca19d; /* Text color */
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline on focus */
+    padding-left: 16px; /* Padding for text */
+}
+
+.form-group1 select:hover {
+    /* Styles on hover */
+    border: none; /* Remove border */
+    outline: black; /* Black outline on hover */
+}
+
+.form-group1 select option {
+    background-color: #181818; /* Option background color */
+    color: #9ca19d; /* Option text color */
+    padding: 10px 20px; /* Option padding */
+}
+
+.form-group1 select:focus {
+    background-color: #181818; /* Background color on focus */
+    color: #9ca19d; /* Text color on focus */
+}
+
+/* Style only the specific select dropdown inside .con-2 */
+.con-3 .form-group select {
+    background-color: #283121;
+    color: #9ca19d;
+    border: none;
+    outline: none;
+    padding-left: 16px;
+    width: 100%;
+}
+
+/* Hover effect for the specific select dropdown */
+.con-3 .form-group select:hover {
+    outline: black;
+}
+
+/* Style options within the specific select dropdown */
+.con-3 .form-group select option {
+    background-color: #181818;
+    color: #9ca19d;
+    padding: 10px 20px;
+}
+
+/* Focus effect for the specific select dropdown */
+.con-3 .form-group select:focus {
+    background-color: #181818;
+    color: #9ca19d;
+}

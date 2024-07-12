@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #172115;">
+<div class="container-1">
+    <div class="con-1 mt-5">
+        <p>Choose Origin & Destination Airports:</p>
+
+        <div class="con-2 mt-4">
+            <p class="p1 ml-3 pt-1">Origin</p>
+            <div class="form-group1">
+                <select id="origin" name="origin" class="form-control">
+                    <option value="SYD">SYD</option>
+                    <option value="JFK">JFK</option>
+                    <option value="DEL">DEL</option>
+                    <option value="BOM">BOM</option>
+                    <option value="BNE">BNE</option>
+                    <option value="BLR">BLR</option>
+                </select>
+            </div>
+        </div>  
+
+        <div class="con-2 mt-4">
+            <p class="p1 ml-3 pt-1">Destination</p>
+            <div class="form-group1">
+                <select id="destination" name="destination" class="form-control">
+                    <option value="JFK">JFK</option>
+                    <option value="DEL">DEL</option>
+                    <option value="SYD">SYD</option>
+                    <option value="LHR">LHR</option>
+                    <option value="CDG">CDG</option>
+                    <option value="DOH">DOH</option>
+                    <option value="SIN">SIN</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="con-3 mt-4">
+            <p class="p2 ml-3 pt-1">Cabin Selection</p>
+            <div class="form-group">
+                <select id="cabin" name="cabin" class="form-control">
+                    <option value="eco" disabled selected>economy</option>
+                    <option value="Economy">Economy</option>
+                    <option value="Business">Business</option>
+                    <option value="First">First</option>
+                </select>
+            </div>  
+        </div>
+
+        <button id="search-button" class="btn mt-3" style="background-color: #39b8a7;" type="button">Search</button> 
+    </div>
+</div>
+
+<div class="flight-data mt-5 mb-5">
+    <div class="airline-card" id="airline-card-1">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Airline Logo" class="logo" />
+        <h2 id="airline-name-1" class="h2"></h2>
+        <div id="destination-date-1">
+            <p id="destination-1"></p>
+            <p id="date-1"></p>
+        </div>
+        <div class="miles-container">
+            <div class="miles-data">
+                <span id="business-miles-1" class="miles-value"></span>
+                <p class="miles-title">Min Business Miles</p>
+            </div>
+            <div class="miles-data">
+                <span id="economy-miles-1" class="miles-value"></span>
+                <p class="miles-title">Min Economy Miles</p>
+            </div>
+            <div class="miles-data">
+                <span id="first-miles-1" class="miles-value"></span>
+                <p class="miles-title">Min First Miles</p>
+            </div>
+        </div>
+    </div>
+    <div class="airline-card" id="airline-card-2">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Airline Logo" class="logo" />
+        <h2 id="airline-name-2" class="h2"></h2>
+        <div id="destination-date-2">
+            <p id="destination-2"></p>
+            <p id="date-2"></p>
+        </div>
+        <div class="miles-container">
+            <div class="miles-data">
+                <span id="business-miles-2" class="miles-value"></span>
+                <p class="miles-title">Min Business Miles</p>
+            </div>
+            <div class="miles-data">
+                <span id="economy-miles-2" class="miles-value"></span>
+                <p class="miles-title">Min Economy Miles</p>
+            </div>
+            <div class="miles-data">
+                <span id="first-miles-2" class="miles-value"></span>
+                <p class="miles-title">Min First Miles</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+<script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+</html>
